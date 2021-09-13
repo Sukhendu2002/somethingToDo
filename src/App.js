@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [text, setText] = useState("Genarate Ideas");
   const [content, setcontent] = useState("");
-  const URL = "http://www.boredapi.com/api/activity/";
+  const URL = "https://www.boredapi.com/api/activity/";
   const handleClick = () => {
     setText("Generating More Ideas");
     axios.get(URL).then((response) => {
